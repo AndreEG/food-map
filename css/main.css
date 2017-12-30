@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-image: url(../assets/images/fondo.png);
+    padding: 60px 0 90px 0;
+}
+
+.padding-cero{
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+
+/*espaciado del logo*/
+.logo{
+    margin: 5%;
+}
+
+/*estilos al input*/
+.busqueda{
+    margin: 2%;
+}
+.form-control, .btn-default{
+    height: 3.5em;
+}
+
+.btn-default{
+    background-color: #72cfd6;
+    color: #174568;
+}
+
+/*estilos a el mapa*/
+.section-map{
+    margin: 5%;
+}
+.borde-orange{
+    border: 0.3em solid #fc4f42;
+    padding: 0;
+}
+
+.descripcion{
+    text-align: center;
+    font-size: 1.2em;
+    color: #174568;
+    font-weight: bolder
+}
+
+/*hover para los distritos*/
+.container-district{
+    height: 3em;
+    background-color: #72cfd6;
+    margin: 0.5em 0;
+}
+.container-district a{
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+
+/*estilos para los logos de los restaurantes*/
+#restaurants-option{
+    margin: 1em;
+}
+
+#restaurants-option h1{
+    font-size: 2em;
+    color: #fc4f42;
+    text-align: center;
+
+}
