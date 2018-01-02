@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var showRestaurant = function(districtResult) {
+  var showRestaurant = function(districtResult) {// deberia llamar la funcion con la variable district result que trae la vista principal
     var objRestaurant = data[districtResult]; // devuelve un objeto con los restaurantes y sus datos
     var restaurantsList = Object.keys(objRestaurant);// devuelve nombres de los restaurant(seran usados para el mouse over)
     var objRestaurantsList = Object.values(objRestaurant); // objeto con los datos de cada restaurant

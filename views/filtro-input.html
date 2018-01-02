@@ -39,11 +39,20 @@
         </div>
       </div>
     </section>
-    <section class="show-restaurant">
-        <div class="container-fluid" id="restaurants-option">
-          <!-- aca deben ir los restaurant -->
-          
+    <section class="section-map ocultar">
+      <div class="container-fluid">
+        <div class="col-xs-8 col-xs-offset-2 borde-orange">
+          <!-- mapa de restaurant cercanos -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3902.8451426636716!2d-77.08202850685423!3d-11.985215168996257!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1514413628991" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+      </div>
+    </section>
+    <section class="descripcion ocultar">
+      <div class="container-fluid">
+        <div class="col-xs-10 col-xs-offset-1">
+          <p>Te ayudamos a encontrar los restaurantes mas cercanos con lo mejor en pescados y mariscos</p>
+        </div>
+      </div>
     </section>
     <section class="show-distict">
       <div class="container-fluid">
@@ -58,9 +67,10 @@
       <img src="../assets/images/footer.png" alt="footer">
     </div>
   </footer>
-  <script src="../js/data.js"></script>
   <script src="../vendors/jquery/jquery-3.2.1.min.js"></script>
   <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/filtro-input.js"></script>
   <script src="../js/district.js"></script>
 </body>
 </html>
