@@ -31,6 +31,6 @@ $(document).ready(function(){
   //que tome container district y quien escuche el evento debe hacer que redireccione a views district
     $('.container-district').click(function(){
       var districtResult = $(this).text(); 
-      console.log(districtResult);
+      console.log(districtResult);//ver como tomar esta variable
     });
 });
