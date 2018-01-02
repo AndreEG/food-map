@@ -11,6 +11,10 @@ $(document).ready(function(){
     //un for que crea las imagenes con los logos de cada restaurant
     for(i=0; i<restaurantsList.length; i++){
       var imgRuta = objRestaurantsList[i]['logo'];
+      var platos = objRestaurantsList[i]['platos'];//es un objeto que contiene los platos
+      var arrPlatos = Object.keys(platos);//un array con los nombres de los platos(recorrerlo dentro)
+      var arrImgPlatos = Object.values(platos);// array con la ruta
+      
       //creando los div que contienen la imagen con el logo dandole el enlace hacia el modal
       $('#restaurants-option').append('<div id="hover'+i+'" class="col-xs-6 col-sm-4 logo-restaurant" data-toggle="modal" data-target="#myModal'+i+'"><img src="' +imgRuta+ '" alt="restaurant"><div id="hover-text'+i+'"></div></div>')
       //creando el modal
@@ -25,11 +29,17 @@ $(document).ready(function(){
               '<div class="modal-body container-fluid">'+
                 '<div class="col-xs-8 col-xs-offset-2"><img src="'+ objRestaurantsList[i]['mapa'] +'" alt="logo"></div>'+
                 '<div class="col-xs-12">'+ objRestaurantsList[i]['dirección'] +'</div>'+
+                '<div class="container-fluid show-platos"></div>'+//aca se almacenara los platos
               '</div>'+
             '</div>'+
           '</div>'+
         '</div>'
       );
+      
+      for(j=0; j<arrImgPlatos.length; j++){
+        $('.show-platos').append('<div class="col-xs-6"><img src="' +arrImgPlatos[j]+ '"   alt="platos"></div>');//corregir el for
+      };
+      
       // //creando el hover
       // $('#hover0').hover(
       //   function() {

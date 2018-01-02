@@ -92,6 +92,11 @@ footer{
 
 }
 
+/*imagenes del modal*/
+.show-platos img{
+    padding: 0.5em;
+}
+
 @media (min-width: 768px){
     .dp-none{
         display: none;

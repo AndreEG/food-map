@@ -4,28 +4,28 @@ var data = {
         'logo' : '../assets/images/data/ancon-red-y-cordel.jpg',
         'mapa' : '../assets/images/data/mapax.gif',
         'dirección' : 'Av. Las Colinas, Ancón',
-        'platos' : [
-          {'Sudado de filete de cabrilla' : '../assets/images/data/ancon-red-y-cordel-plato1.jpg'},
-          {'ceviche' : '../assets/images/data/ancon-red-y-cordel-plato2.jpg'}
-        ],
+        'platos' : {
+          'Sudado de filete de cabrilla' : '../assets/images/data/ancon-red-y-cordel-plato1.jpg',
+          'ceviche' : '../assets/images/data/ancon-red-y-cordel-plato2.jpg'
+        }
       },
       'La Quinta 615' : {
         'logo' : '../assets/images/data/ancon-la-quinta-615.jpg',
         'mapa' : '../assets/images/data/mapax.gif',
         'dirección' : 'Jr. Loreto 615, Ancón',
-        'platos' : [
-          {'Ceviche de pejerrey' : '../assets/images/data/ancon-red-y-cordel-plato1.jpg'},
-          {'Causa de pulpa de cangrejo' : '../assets/images/data/ancon-red-y-cordel-plato2'}
-        ],
+        'platos' : {
+          'Ceviche de pejerrey' : '../assets/images/data/ancon-la-quinta-615-plato1.jpg',
+          'Causa de pulpa de cangrejo' : '../assets/images/data/ancon-la-quinta-615-plato2.jpg'
+        },
       },
       'Pepe Cangrejo' : {
         'logo' : '../assets/images/data/ancon-pepe-cangrejo.jpg',
         'mapa' : '../assets/images/data/mapax.gif',
         'dirección' : 'Calle 2 de Mayo 601, Ancón',
-        'platos' : [
-          {'Chicharrón de Calamares' : '../assets/images/data/ancon-pepe-cangrejo-plato1.jpg'},
-          {'Arroz con Mariscos' : '../assets/images/data/ancon-pepe-cangrejo-plato2.jpg'}
-        ],
+        'platos' : {
+          'Chicharrón de Calamares' : '../assets/images/data/ancon-pepe-cangrejo-plato1.jpg',
+          'Arroz con Mariscos' : '../assets/images/data/ancon-pepe-cangrejo-plato2.jpg'
+        },
       }
     },
     'Ate' : {},
