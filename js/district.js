@@ -1,13 +1,13 @@
 $(document).ready(function() {
-  var showRestaurant = function(districtResult) {// deberia llamar la funcion con la variable district result que trae la vista principal
-    var objRestaurant = data[districtResult]; // devuelve un objeto con los restaurantes y sus datos
+  var showRestaurant = function(distrito) {// deberia llamar la funcion con la variable district result que trae la vista principal
+    var objRestaurant = data[distrito]; // devuelve un objeto con los restaurantes y sus datos
     var restaurantsList = Object.keys(objRestaurant);// devuelve nombres de los restaurant(seran usados para el mouse over)
     var objRestaurantsList = Object.values(objRestaurant); // objeto con los datos de cada restaurant
     console.log(objRestaurant);
     console.log(restaurantsList); 
     console.log(objRestaurantsList);
     // titulo para la busqueda
-    $('#restaurants-option').append('<div class="col-xs-12"><h1>Restaurantes en ' + districtResult + '</h1></div>');
+    $('#restaurants-option').append('<div class="col-xs-12"><h1>Restaurantes en ' + distrito + '</h1></div>');
     // un for que crea las imagenes con los logos de cada restaurant
     for (i = 0; i < restaurantsList.length; i++) {
       var imgRuta = objRestaurantsList[i]['logo'];

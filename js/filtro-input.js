@@ -2,13 +2,14 @@
 $(document).ready(function() {
   // variable que selecciona el input
   var search = $('#input');
+  var districtResult = '';
   // variable que guarde los distritos
   var arrDistrict = Object.keys(data);
   console.log(arrDistrict);
   // crea los div con los distritos
   for (i = 0; i < arrDistrict.length; i++) {
     var districtSearch = arrDistrict[i];// modificar el enlace a district trabajarlo con evento
-    $('#show-dis').append('<div class="container-district">' + '<a href="district.html">' + districtSearch + '</a>' + '<div>');
+    $('#show-dis').append('<div class="container-district">' + districtSearch + '</div>');
   }
   // oculta los distritos
   $('.container-district').hide();
@@ -30,7 +31,8 @@ $(document).ready(function() {
   });
   // que tome container district y quien escuche el evento debe hacer que redireccione a views district
   $('.container-district').click(function() {
-    var districtResult = $(this).text(); 
+    districtResult = $(this).text(); 
+    window.location.href = 'district.html';
     console.log(districtResult);// ver como tomar esta variable
-  });
+  });  
 });
