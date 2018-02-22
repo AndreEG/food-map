@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .container-fluid{
@@ -31,6 +32,41 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%
+}
+
+/*vista splas*/
+.img-size{
+    height: 100px;
+}
+
+.img-1{
+    background-image: url(../assets/images/img1.jpg);
+    background-size: cover;
+}
+
+.img-2{
+    background-image: url(../assets/images/img2.jpg);
+    background-size: cover;
+}
+
+.img-3{
+    background-image: url(../assets/images/img3.jpeg);
+    background-size: cover;
+}
+
+.img-4{
+    background-image: url(../assets/images/img4.jpg);
+    background-size: cover;
+}
+
+.imgfood{
+    margin: 30px 0;
+}
+
+.frase{
+    text-align: center;
+    color: #174568;
+    margin: 20px 0;
 }
 
 /*espaciado del logo*/
@@ -95,8 +131,16 @@ footer{
     padding: 0.5em;
 }
 
+.platos-size{
+    height: 230px;
+}
+
 @media (min-width: 768px){
     .dp-none{
         display: none;
+    }
+
+    .img-size{
+        height: 150px;
     }
 }

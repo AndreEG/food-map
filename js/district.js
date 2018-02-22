@@ -37,7 +37,7 @@ $(document).ready(function() {
       );
       
       for (j = 0; j < arrImgPlatos.length; j++) {// debe agregar los platos en cada restaurant
-        $('.show-platos').append('<div class="col-xs-6"><img src="' + arrImgPlatos[j] + '"   alt="platos"></div>');// corregir el for
+        $('.show-platos').append('<div class="col-xs-6 platos-size"><img src="' + arrImgPlatos[j] + '" alt="platos"></div>');// corregir el for
       };
       
       // //creando el hover
